@@ -1,9 +1,12 @@
 import { useAuth } from '../context/AuthContext';
 
 function LoginButton() {
-  const { login } = useAuth();
+  const { isLoggedIn, toggleAuth } = useAuth();
 
-  return <button onClick={login}>Log In</button>;
+  return (
+    <button onClick={toggleAuth}>
+      {isLoggedIn ? 'Log Out' : 'Log In'}
+    </button>);
 }
 
 export default LoginButton;
