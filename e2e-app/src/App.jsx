@@ -22,7 +22,7 @@ function App() {
 
       {submitted && (
         <div>
-          <h2>Thank you for your feedback!</h2>
+          <h2>Thank you for your feedbck!</h2>
         </div>
       )}
     </div>
