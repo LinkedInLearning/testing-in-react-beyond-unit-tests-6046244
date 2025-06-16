@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import Counter from './Counter';
+import Counter from '../Counter';
 
 test('it displays 0 and increments on click', () => {
   render(<Counter />);
