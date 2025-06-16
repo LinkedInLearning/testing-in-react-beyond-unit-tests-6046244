@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('Feedback flow works correctly', async ({ page }) => {
-  await page.goto('https://zany-fortnight-j47664w5p59cpxx5-5173.app.github.dev/');
+  await page.goto('http://localhost:5173');
 
   await expect(page.locator('text=Thank you for purchasing')).toBeVisible();
 
