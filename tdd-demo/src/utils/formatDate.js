@@ -1,6 +1,6 @@
-// export function formatDate(date) {
-//   return new Date(date).toLocaleDateString('en-US', {
-//     month: 'short',
-//     year: 'numeric',
-//   });
-// }
+export function formatDate(date) {
+  return new Date(date).toLocaleDateString('en-US', {
+    month: 'short',
+    year: 'numeric',
+  });
+}

@@ -1,18 +1,13 @@
-// export default function UserCard({ user, onSelect }) {
-//   const joinedDate = new Date(user.joined).toLocaleDateString('en-US', {
-//     month: 'short',
-//     year: 'numeric',
-//   });
+import { formatDate } from '../utils/formatDate'
+import { useUserClick } from '../hooks/useUserClick'
 
-//   const handleClick = () => {
-//     console.log('User clicked:', user.name);
-//     onSelect(user.id);
-//   };
+export default function UserCard({ user, onSelect }) {
+  const handleClick = useUserClick(onSelect, user)
 
-//   return (
-//     <div onClick={handleClick}>
-//       <h3>{user.name}</h3>
-//       <p>Joined: {joinedDate}</p>
-//     </div>
-//   );
-// }
+  return (
+    <div onClick={handleClick}>
+      <h3>{user.name}</h3>
+      <p>Joined: {formatDate(user.joined)}</p>
+    </div>
+  );
+}

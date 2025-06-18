@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import UserCard from '../components/UserCard'; // adjust the path based on your project
+import UserCard from '../components/UserCard';
 
 test('renders username and formatted date', () => {
   
