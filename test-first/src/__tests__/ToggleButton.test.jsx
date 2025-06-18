@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import ToggleButton from './ToggleButton';
+import ToggleButton from '../components/ToggleButton';
 
 test('renders with OFF and toggles to ON when clicked', () => {
   render(<ToggleButton />);

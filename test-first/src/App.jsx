@@ -1,10 +1,10 @@
-
+import ToggleButton from './components/ToggleButton'
 
 function App() {
 
   return (
     <>
-     
+      <ToggleButton />
     </>
   )
 }
